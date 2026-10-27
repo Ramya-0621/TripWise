@@ -1,0 +1,365 @@
+{
+  "_note": "ILLUSTRATIVE ESTIMATES ONLY - not live prices. Costs are in Indian rupees (INR). accommodation_per_room_night = price of ONE double-occupancy room for ONE night. food_per_person_day and activity cost_pp are per person. local_transport_per_vehicle_day is per 4-seater cab/auto-rickshaw group per day. transfer_cost_pp is the extra ROUND-TRIP per-person cost to reach the town from the nearest railhead/airport. Transport fares between cities are calculated from distance (see reference.json). Edit or add destinations freely; keep the same fields.",
+  "destinations": [
+    {
+      "id": "manali", "name": "Manali", "state": "Himachal Pradesh",
+      "category": "nature", "secondary_categories": ["adventure"],
+      "description": "A Himalayan valley town on the Beas river with snow-capped views, pine forests, waterfalls and a lively adventure scene.",
+      "best_season": "March-June for green valleys; December-February for snow",
+      "days": {"min": 3, "ideal": 5, "max": 8},
+      "lat": 32.2396, "lon": 77.1887, "wiki_title": "Manali,_Himachal_Pradesh",
+      "access": {"bus": true, "train": true, "flight": true},
+      "transfer_cost_pp": {"bus": 0, "train": 1400, "flight": 1100},
+      "accommodation_per_room_night": {"budget": 800, "standard": 2200, "luxury": 7000},
+      "food_per_person_day": 700, "local_transport_per_vehicle_day": 900,
+      "tags": ["nature", "scenic_views", "trekking", "adventure_sports", "photography", "shopping"],
+      "activities": [
+        {"name": "Solang Valley snow activities & paragliding", "cost_pp": 1500, "slots": 2, "tags": ["adventure_sports", "scenic_views"]},
+        {"name": "Atal Tunnel & Sissu valley excursion", "cost_pp": 1200, "slots": 2, "tags": ["scenic_views", "photography", "nature"]},
+        {"name": "Hadimba Temple & Old Manali cafe walk", "cost_pp": 300, "slots": 1, "tags": ["culture", "spirituality", "food", "shopping"]},
+        {"name": "Beas river rafting", "cost_pp": 1000, "slots": 1, "tags": ["adventure_sports", "water_sports"]},
+        {"name": "Jogini Waterfall trek", "cost_pp": 200, "slots": 1, "tags": ["trekking", "nature", "photography"]}
+      ]
+    },
+    {
+      "id": "munnar", "name": "Munnar", "state": "Kerala",
+      "category": "nature", "secondary_categories": ["wildlife"],
+      "description": "Rolling tea plantations, misty hills and cool weather in the Western Ghats, home to the endangered Nilgiri tahr.",
+      "best_season": "September-March",
+      "days": {"min": 3, "ideal": 4, "max": 6},
+      "lat": 10.0889, "lon": 77.0595, "wiki_title": "Munnar",
+      "access": {"bus": true, "train": true, "flight": true},
+      "transfer_cost_pp": {"bus": 0, "train": 1800, "flight": 2200},
+      "accommodation_per_room_night": {"budget": 1200, "standard": 3000, "luxury": 9000},
+      "food_per_person_day": 700, "local_transport_per_vehicle_day": 800,
+      "tags": ["nature", "scenic_views", "photography", "trekking", "relaxation", "wildlife", "shopping"],
+      "activities": [
+        {"name": "Tea plantation walk & tea museum", "cost_pp": 250, "slots": 1, "tags": ["nature", "culture", "photography"]},
+        {"name": "Eravikulam National Park (Nilgiri tahr)", "cost_pp": 400, "slots": 1, "tags": ["wildlife", "nature", "trekking"]},
+        {"name": "Top Station viewpoint", "cost_pp": 300, "slots": 1, "tags": ["scenic_views", "photography"]},
+        {"name": "Mattupetty dam boating", "cost_pp": 500, "slots": 1, "tags": ["relaxation", "water_sports", "scenic_views"]},
+        {"name": "Kolukkumalai sunrise jeep ride", "cost_pp": 800, "slots": 2, "tags": ["adventure_sports", "scenic_views", "photography"]}
+      ]
+    },
+    {
+      "id": "darjeeling", "name": "Darjeeling", "state": "West Bengal",
+      "category": "nature", "secondary_categories": [],
+      "description": "A colonial-era hill station famed for tea gardens, the toy train and sunrise views of Kanchenjunga.",
+      "best_season": "March-May and October-November",
+      "days": {"min": 3, "ideal": 4, "max": 6},
+      "lat": 27.0360, "lon": 88.2627, "wiki_title": "Darjeeling",
+      "access": {"bus": true, "train": true, "flight": true},
+      "transfer_cost_pp": {"bus": 0, "train": 1000, "flight": 1200},
+      "accommodation_per_room_night": {"budget": 1000, "standard": 2600, "luxury": 8000},
+      "food_per_person_day": 600, "local_transport_per_vehicle_day": 700,
+      "tags": ["nature", "scenic_views", "photography", "trekking", "culture", "food", "shopping", "history"],
+      "activities": [
+        {"name": "Tiger Hill sunrise over Kanchenjunga", "cost_pp": 600, "slots": 1, "tags": ["scenic_views", "photography", "nature"]},
+        {"name": "Darjeeling Himalayan Railway toy train ride", "cost_pp": 1400, "slots": 1, "tags": ["history", "photography", "culture"]},
+        {"name": "Tea estate tour & tasting", "cost_pp": 500, "slots": 1, "tags": ["nature", "food"]},
+        {"name": "Mountaineering Institute & zoo", "cost_pp": 300, "slots": 1, "tags": ["history", "wildlife"]},
+        {"name": "Singalila ridge day trek", "cost_pp": 1500, "slots": 2, "tags": ["trekking", "scenic_views", "nature"]}
+      ]
+    },
+    {
+      "id": "ladakh", "name": "Leh-Ladakh", "state": "Ladakh",
+      "category": "adventure", "secondary_categories": ["nature"],
+      "description": "A high-altitude desert of turquoise lakes, ancient monasteries and dramatic mountain passes. Allow time to acclimatise.",
+      "best_season": "May-September",
+      "days": {"min": 5, "ideal": 7, "max": 10},
+      "lat": 34.1526, "lon": 77.5771, "wiki_title": "Leh",
+      "access": {"bus": false, "train": false, "flight": true},
+      "transfer_cost_pp": {"flight": 0},
+      "accommodation_per_room_night": {"budget": 1500, "standard": 3500, "luxury": 9000},
+      "food_per_person_day": 900, "local_transport_per_vehicle_day": 1800,
+      "tags": ["adventure_sports", "trekking", "scenic_views", "photography", "spirituality", "culture", "nature"],
+      "activities": [
+        {"name": "Pangong Lake excursion", "cost_pp": 3500, "slots": 2, "tags": ["scenic_views", "photography", "nature"]},
+        {"name": "Nubra Valley & camel safari", "cost_pp": 4000, "slots": 2, "tags": ["adventure_sports", "culture", "nature"]},
+        {"name": "Thiksey & Hemis monasteries", "cost_pp": 600, "slots": 1, "tags": ["spirituality", "culture", "history"]},
+        {"name": "Indus river rafting", "cost_pp": 2500, "slots": 1, "tags": ["adventure_sports", "water_sports"]},
+        {"name": "Leh Palace & market walk", "cost_pp": 300, "slots": 1, "tags": ["history", "shopping", "food"]}
+      ]
+    },
+    {
+      "id": "goa", "name": "Goa", "state": "Goa",
+      "category": "beach", "secondary_categories": [],
+      "description": "Sun, sand and Portuguese heritage: lively beaches in the north, quieter shores in the south and a famous food and nightlife scene.",
+      "best_season": "November-February",
+      "days": {"min": 3, "ideal": 5, "max": 7},
+      "lat": 15.2993, "lon": 74.1240, "wiki_title": "Goa",
+      "access": {"bus": true, "train": true, "flight": true},
+      "transfer_cost_pp": {"bus": 0, "train": 600, "flight": 900},
+      "accommodation_per_room_night": {"budget": 1500, "standard": 3500, "luxury": 10000},
+      "food_per_person_day": 900, "local_transport_per_vehicle_day": 700,
+      "tags": ["beaches", "water_sports", "nightlife", "food", "relaxation", "history", "shopping", "photography", "culture"],
+      "activities": [
+        {"name": "Baga & Calangute water sports", "cost_pp": 1800, "slots": 1, "tags": ["water_sports", "beaches", "adventure_sports"]},
+        {"name": "Old Goa churches & Fort Aguada", "cost_pp": 200, "slots": 1, "tags": ["history", "architecture", "culture"]},
+        {"name": "Dudhsagar Falls jeep trip", "cost_pp": 1200, "slots": 2, "tags": ["nature", "adventure_sports", "photography"]},
+        {"name": "Mandovi river sunset cruise", "cost_pp": 600, "slots": 1, "tags": ["relaxation", "nightlife", "scenic_views"]},
+        {"name": "Beach shack crawl & night market", "cost_pp": 500, "slots": 1, "tags": ["food", "nightlife", "shopping", "beaches"]}
+      ]
+    },
+    {
+      "id": "gokarna", "name": "Gokarna", "state": "Karnataka",
+      "category": "beach", "secondary_categories": ["spiritual"],
+      "description": "A laid-back temple town with a string of quiet, cliff-backed beaches reachable by short coastal treks.",
+      "best_season": "October-March",
+      "days": {"min": 2, "ideal": 3, "max": 5},
+      "lat": 14.5479, "lon": 74.3188, "wiki_title": "Gokarna,_Karnataka",
+      "access": {"bus": true, "train": true, "flight": false},
+      "transfer_cost_pp": {"bus": 0, "train": 400},
+      "accommodation_per_room_night": {"budget": 800, "standard": 2200, "luxury": 6000},
+      "food_per_person_day": 600, "local_transport_per_vehicle_day": 500,
+      "tags": ["beaches", "relaxation", "spirituality", "trekking", "photography", "water_sports", "scenic_views"],
+      "activities": [
+        {"name": "Om Beach & Kudle Beach time", "cost_pp": 100, "slots": 1, "tags": ["beaches", "relaxation", "photography"]},
+        {"name": "Coastal trek to Paradise Beach", "cost_pp": 100, "slots": 2, "tags": ["trekking", "beaches", "scenic_views"]},
+        {"name": "Mahabaleshwar Temple darshan", "cost_pp": 100, "slots": 1, "tags": ["spirituality", "culture", "architecture"]},
+        {"name": "Kayaking & banana boat", "cost_pp": 700, "slots": 1, "tags": ["water_sports", "beaches"]},
+        {"name": "Beachside yoga session", "cost_pp": 400, "slots": 1, "tags": ["relaxation", "spirituality"]}
+      ]
+    },
+    {
+      "id": "andaman", "name": "Andaman Islands", "state": "Andaman & Nicobar Islands",
+      "category": "beach", "secondary_categories": ["adventure"],
+      "description": "Powder-white beaches, coral reefs and clear water around Port Blair, Havelock and Neil Island. Reached by flight.",
+      "best_season": "October-May",
+      "days": {"min": 5, "ideal": 6, "max": 9},
+      "lat": 11.6234, "lon": 92.7265, "wiki_title": "Andaman_and_Nicobar_Islands",
+      "access": {"bus": false, "train": false, "flight": true},
+      "transfer_cost_pp": {"flight": 0},
+      "accommodation_per_room_night": {"budget": 2200, "standard": 5000, "luxury": 14000},
+      "food_per_person_day": 1000, "local_transport_per_vehicle_day": 1200,
+      "tags": ["beaches", "water_sports", "adventure_sports", "photography", "relaxation", "history", "nature", "scenic_views"],
+      "activities": [
+        {"name": "Scuba diving at Havelock", "cost_pp": 4500, "slots": 1, "tags": ["water_sports", "adventure_sports", "nature"]},
+        {"name": "Radhanagar Beach sunset (incl. ferry)", "cost_pp": 1000, "slots": 2, "tags": ["beaches", "relaxation", "photography", "scenic_views"]},
+        {"name": "Cellular Jail & light-and-sound show", "cost_pp": 400, "slots": 1, "tags": ["history", "architecture"]},
+        {"name": "Neil Island day trip", "cost_pp": 1800, "slots": 2, "tags": ["beaches", "relaxation", "photography"]},
+        {"name": "Elephant Beach snorkelling", "cost_pp": 1500, "slots": 1, "tags": ["water_sports", "nature"]}
+      ]
+    },
+    {
+      "id": "pondicherry", "name": "Pondicherry", "state": "Puducherry",
+      "category": "beach", "secondary_categories": ["historical", "spiritual"],
+      "description": "A former French colony with pastel streets, seaside promenades, cafes and the experimental township of Auroville.",
+      "best_season": "October-March",
+      "days": {"min": 2, "ideal": 3, "max": 5},
+      "lat": 11.9416, "lon": 79.8083, "wiki_title": "Puducherry_(city)",
+      "access": {"bus": true, "train": true, "flight": false},
+      "transfer_cost_pp": {"bus": 0, "train": 600},
+      "accommodation_per_room_night": {"budget": 1500, "standard": 3000, "luxury": 8000},
+      "food_per_person_day": 800, "local_transport_per_vehicle_day": 500,
+      "tags": ["beaches", "culture", "architecture", "food", "relaxation", "spirituality", "shopping", "photography", "history"],
+      "activities": [
+        {"name": "French Quarter heritage walk", "cost_pp": 200, "slots": 1, "tags": ["history", "architecture", "photography", "culture"]},
+        {"name": "Auroville & Matrimandir", "cost_pp": 150, "slots": 1, "tags": ["spirituality", "culture"]},
+        {"name": "Paradise Beach boat ride", "cost_pp": 400, "slots": 1, "tags": ["beaches", "relaxation", "water_sports"]},
+        {"name": "Cafe hopping & Creole cuisine", "cost_pp": 800, "slots": 1, "tags": ["food", "culture"]},
+        {"name": "Scuba at Temple Reef", "cost_pp": 3500, "slots": 1, "tags": ["water_sports", "adventure_sports"]}
+      ]
+    },
+    {
+      "id": "jaipur", "name": "Jaipur", "state": "Rajasthan",
+      "category": "historical", "secondary_categories": [],
+      "description": "The Pink City: hill forts, royal palaces, observatories and some of India's best bazaars for textiles and jewellery.",
+      "best_season": "October-March",
+      "days": {"min": 2, "ideal": 3, "max": 5},
+      "lat": 26.9124, "lon": 75.7873, "wiki_title": "Jaipur",
+      "access": {"bus": true, "train": true, "flight": true},
+      "transfer_cost_pp": {"bus": 0, "train": 0, "flight": 600},
+      "accommodation_per_room_night": {"budget": 1200, "standard": 3000, "luxury": 10000},
+      "food_per_person_day": 700, "local_transport_per_vehicle_day": 700,
+      "tags": ["history", "architecture", "culture", "food", "shopping", "photography"],
+      "activities": [
+        {"name": "Amber Fort", "cost_pp": 550, "slots": 1, "tags": ["history", "architecture", "photography"]},
+        {"name": "City Palace & Jantar Mantar", "cost_pp": 700, "slots": 1, "tags": ["history", "architecture", "culture"]},
+        {"name": "Hawa Mahal & Johari Bazaar", "cost_pp": 100, "slots": 1, "tags": ["shopping", "architecture", "photography", "food"]},
+        {"name": "Chokhi Dhani village evening", "cost_pp": 1200, "slots": 1, "tags": ["culture", "food"]},
+        {"name": "Nahargarh Fort sunset", "cost_pp": 300, "slots": 1, "tags": ["scenic_views", "photography"]}
+      ]
+    },
+    {
+      "id": "hampi", "name": "Hampi", "state": "Karnataka",
+      "category": "historical", "secondary_categories": ["spiritual"],
+      "description": "The boulder-strewn ruins of the Vijayanagara empire, a UNESCO World Heritage Site beside the Tungabhadra river.",
+      "best_season": "October-February",
+      "days": {"min": 2, "ideal": 3, "max": 5},
+      "lat": 15.3350, "lon": 76.4600, "wiki_title": "Hampi",
+      "access": {"bus": true, "train": true, "flight": false},
+      "transfer_cost_pp": {"bus": 0, "train": 400},
+      "accommodation_per_room_night": {"budget": 800, "standard": 2200, "luxury": 6500},
+      "food_per_person_day": 500, "local_transport_per_vehicle_day": 500,
+      "tags": ["history", "architecture", "culture", "photography", "trekking", "adventure_sports", "spirituality", "scenic_views"],
+      "activities": [
+        {"name": "Virupaksha Temple & Hampi Bazaar", "cost_pp": 50, "slots": 1, "tags": ["spirituality", "history", "architecture"]},
+        {"name": "Vittala Temple & stone chariot", "cost_pp": 600, "slots": 1, "tags": ["history", "architecture", "photography"]},
+        {"name": "Matanga Hill sunrise climb", "cost_pp": 0, "slots": 1, "tags": ["trekking", "scenic_views", "photography"]},
+        {"name": "Coracle ride on the Tungabhadra", "cost_pp": 300, "slots": 1, "tags": ["water_sports", "relaxation", "scenic_views"]},
+        {"name": "Rock climbing & bouldering", "cost_pp": 1500, "slots": 1, "tags": ["adventure_sports", "trekking"]}
+      ]
+    },
+    {
+      "id": "agra", "name": "Agra", "state": "Uttar Pradesh",
+      "category": "historical", "secondary_categories": [],
+      "description": "Home of the Taj Mahal, Agra Fort and Fatehpur Sikri - the finest Mughal architecture in India.",
+      "best_season": "October-March",
+      "days": {"min": 2, "ideal": 3, "max": 4},
+      "lat": 27.1767, "lon": 78.0081, "wiki_title": "Agra",
+      "access": {"bus": true, "train": true, "flight": false},
+      "transfer_cost_pp": {"bus": 0, "train": 0},
+      "accommodation_per_room_night": {"budget": 1200, "standard": 3200, "luxury": 12000},
+      "food_per_person_day": 700, "local_transport_per_vehicle_day": 600,
+      "tags": ["history", "architecture", "culture", "photography", "food", "shopping"],
+      "activities": [
+        {"name": "Taj Mahal at sunrise", "cost_pp": 1300, "slots": 1, "tags": ["history", "architecture", "photography"]},
+        {"name": "Agra Fort", "cost_pp": 650, "slots": 1, "tags": ["history", "architecture"]},
+        {"name": "Fatehpur Sikri day trip", "cost_pp": 600, "slots": 2, "tags": ["history", "architecture", "culture"]},
+        {"name": "Mehtab Bagh sunset view of the Taj", "cost_pp": 300, "slots": 1, "tags": ["photography", "scenic_views"]},
+        {"name": "Petha & Mughlai food walk", "cost_pp": 600, "slots": 1, "tags": ["food", "shopping"]}
+      ]
+    },
+    {
+      "id": "udaipur", "name": "Udaipur", "state": "Rajasthan",
+      "category": "historical", "secondary_categories": [],
+      "description": "The City of Lakes: marble palaces, lakeside havelis and sunset boat rides in a romantic Aravalli setting.",
+      "best_season": "September-March",
+      "days": {"min": 3, "ideal": 4, "max": 6},
+      "lat": 24.5854, "lon": 73.7125, "wiki_title": "Udaipur",
+      "access": {"bus": true, "train": true, "flight": true},
+      "transfer_cost_pp": {"bus": 0, "train": 0, "flight": 500},
+      "accommodation_per_room_night": {"budget": 1500, "standard": 4000, "luxury": 14000},
+      "food_per_person_day": 800, "local_transport_per_vehicle_day": 700,
+      "tags": ["history", "architecture", "culture", "relaxation", "photography", "scenic_views", "shopping", "food"],
+      "activities": [
+        {"name": "City Palace complex", "cost_pp": 400, "slots": 1, "tags": ["history", "architecture", "culture"]},
+        {"name": "Lake Pichola boat ride", "cost_pp": 500, "slots": 1, "tags": ["relaxation", "scenic_views", "photography"]},
+        {"name": "Sajjangarh & Saheliyon ki Bari", "cost_pp": 200, "slots": 1, "tags": ["scenic_views", "nature"]},
+        {"name": "Kumbhalgarh fort day trip", "cost_pp": 800, "slots": 2, "tags": ["history", "architecture", "trekking"]},
+        {"name": "Bagore ki Haveli folk dance show", "cost_pp": 150, "slots": 1, "tags": ["culture"]}
+      ]
+    },
+    {
+      "id": "rishikesh", "name": "Rishikesh", "state": "Uttarakhand",
+      "category": "adventure", "secondary_categories": ["spiritual", "nature"],
+      "description": "The yoga capital on the Ganga: white-water rafting, bungee jumping, riverside ashrams and the evening aarti.",
+      "best_season": "September-November and February-May",
+      "days": {"min": 3, "ideal": 4, "max": 6},
+      "lat": 30.0869, "lon": 78.2676, "wiki_title": "Rishikesh",
+      "access": {"bus": true, "train": true, "flight": true},
+      "transfer_cost_pp": {"bus": 0, "train": 500, "flight": 1200},
+      "accommodation_per_room_night": {"budget": 700, "standard": 2000, "luxury": 7500},
+      "food_per_person_day": 600, "local_transport_per_vehicle_day": 500,
+      "tags": ["adventure_sports", "water_sports", "spirituality", "trekking", "relaxation", "nature", "food", "photography"],
+      "activities": [
+        {"name": "White-water rafting on the Ganga", "cost_pp": 1500, "slots": 1, "tags": ["adventure_sports", "water_sports"]},
+        {"name": "Bungee jump / giant swing / zip-line", "cost_pp": 3500, "slots": 1, "tags": ["adventure_sports"]},
+        {"name": "Triveni Ghat Ganga Aarti", "cost_pp": 0, "slots": 1, "tags": ["spirituality", "culture", "photography"]},
+        {"name": "Yoga & meditation class", "cost_pp": 600, "slots": 1, "tags": ["spirituality", "relaxation"]},
+        {"name": "Neer Garh waterfall & Kunjapuri sunrise trek", "cost_pp": 400, "slots": 2, "tags": ["trekking", "nature", "scenic_views"]}
+      ]
+    },
+    {
+      "id": "varanasi", "name": "Varanasi", "state": "Uttar Pradesh",
+      "category": "spiritual", "secondary_categories": ["historical"],
+      "description": "One of the world's oldest living cities, built along the ghats of the Ganga with temples, rituals and legendary street food.",
+      "best_season": "October-March",
+      "days": {"min": 2, "ideal": 3, "max": 5},
+      "lat": 25.3176, "lon": 82.9739, "wiki_title": "Varanasi",
+      "access": {"bus": true, "train": true, "flight": true},
+      "transfer_cost_pp": {"bus": 0, "train": 0, "flight": 800},
+      "accommodation_per_room_night": {"budget": 900, "standard": 2600, "luxury": 9000},
+      "food_per_person_day": 500, "local_transport_per_vehicle_day": 400,
+      "tags": ["spirituality", "culture", "history", "food", "photography", "architecture", "shopping"],
+      "activities": [
+        {"name": "Dashashwamedh Ghat Ganga Aarti", "cost_pp": 100, "slots": 1, "tags": ["spirituality", "culture", "photography"]},
+        {"name": "Sunrise boat ride along the ghats", "cost_pp": 600, "slots": 1, "tags": ["spirituality", "photography", "culture"]},
+        {"name": "Kashi Vishwanath Temple darshan", "cost_pp": 100, "slots": 1, "tags": ["spirituality", "architecture"]},
+        {"name": "Sarnath excursion", "cost_pp": 300, "slots": 2, "tags": ["history", "spirituality", "architecture"]},
+        {"name": "Banarasi street-food trail", "cost_pp": 500, "slots": 1, "tags": ["food", "culture", "shopping"]}
+      ]
+    },
+    {
+      "id": "tirupati", "name": "Tirupati", "state": "Andhra Pradesh",
+      "category": "spiritual", "secondary_categories": [],
+      "description": "Home of the Tirumala Venkateswara Temple, one of the most visited pilgrimage sites in the world, set among the Eastern Ghats.",
+      "best_season": "September-February",
+      "days": {"min": 2, "ideal": 3, "max": 4},
+      "lat": 13.6288, "lon": 79.4192, "wiki_title": "Tirupati",
+      "access": {"bus": true, "train": true, "flight": true},
+      "transfer_cost_pp": {"bus": 0, "train": 0, "flight": 400},
+      "accommodation_per_room_night": {"budget": 900, "standard": 2200, "luxury": 6500},
+      "food_per_person_day": 500, "local_transport_per_vehicle_day": 400,
+      "tags": ["spirituality", "culture", "architecture", "nature", "shopping", "photography", "food"],
+      "activities": [
+        {"name": "Tirumala Venkateswara Temple darshan", "cost_pp": 300, "slots": 2, "tags": ["spirituality", "architecture", "culture"]},
+        {"name": "Sri Padmavathi Temple, Tiruchanur", "cost_pp": 100, "slots": 1, "tags": ["spirituality", "architecture"]},
+        {"name": "Kapila Theertham waterfall", "cost_pp": 100, "slots": 1, "tags": ["nature", "spirituality"]},
+        {"name": "Chandragiri Fort", "cost_pp": 200, "slots": 1, "tags": ["history", "architecture"]},
+        {"name": "Sri Kalahasti Temple", "cost_pp": 150, "slots": 2, "tags": ["spirituality", "architecture", "history"]}
+      ]
+    },
+    {
+      "id": "corbett", "name": "Jim Corbett National Park", "state": "Uttarakhand",
+      "category": "wildlife", "secondary_categories": ["nature"],
+      "description": "India's oldest national park, on the Ramganga river, known for tigers, elephants and over 600 bird species.",
+      "best_season": "November-June (park zones close in monsoon)",
+      "days": {"min": 2, "ideal": 3, "max": 5},
+      "lat": 29.5300, "lon": 78.7747, "wiki_title": "Jim_Corbett_National_Park",
+      "access": {"bus": true, "train": true, "flight": false},
+      "transfer_cost_pp": {"bus": 0, "train": 300},
+      "accommodation_per_room_night": {"budget": 1500, "standard": 4500, "luxury": 15000},
+      "food_per_person_day": 800, "local_transport_per_vehicle_day": 900,
+      "tags": ["wildlife", "nature", "photography", "adventure_sports", "relaxation", "scenic_views", "trekking"],
+      "activities": [
+        {"name": "Jeep safari, Bijrani zone", "cost_pp": 2500, "slots": 1, "tags": ["wildlife", "nature", "photography"]},
+        {"name": "Dhikala canter safari", "cost_pp": 3500, "slots": 2, "tags": ["wildlife", "nature"]},
+        {"name": "Corbett Falls & Garjia Devi Temple", "cost_pp": 200, "slots": 1, "tags": ["nature", "spirituality"]},
+        {"name": "Guided birdwatching walk", "cost_pp": 600, "slots": 1, "tags": ["wildlife", "photography", "nature"]},
+        {"name": "Kosi river activities", "cost_pp": 800, "slots": 1, "tags": ["adventure_sports", "water_sports", "relaxation"]}
+      ]
+    },
+    {
+      "id": "ranthambore", "name": "Ranthambore National Park", "state": "Rajasthan",
+      "category": "wildlife", "secondary_categories": ["historical"],
+      "description": "Dry deciduous forest around a 10th-century fort, one of the best places in India to see wild tigers.",
+      "best_season": "October-June",
+      "days": {"min": 2, "ideal": 3, "max": 4},
+      "lat": 26.0173, "lon": 76.5026, "wiki_title": "Ranthambore_National_Park",
+      "access": {"bus": true, "train": true, "flight": false},
+      "transfer_cost_pp": {"bus": 0, "train": 300},
+      "accommodation_per_room_night": {"budget": 1800, "standard": 4500, "luxury": 16000},
+      "food_per_person_day": 800, "local_transport_per_vehicle_day": 800,
+      "tags": ["wildlife", "nature", "photography", "history", "adventure_sports", "scenic_views"],
+      "activities": [
+        {"name": "Canter tiger safari", "cost_pp": 1800, "slots": 1, "tags": ["wildlife", "nature", "photography"]},
+        {"name": "Private gypsy tiger safari", "cost_pp": 3000, "slots": 1, "tags": ["wildlife", "photography", "nature"]},
+        {"name": "Ranthambore Fort & Ganesh Temple", "cost_pp": 200, "slots": 1, "tags": ["history", "architecture", "scenic_views"]},
+        {"name": "Surwal Lake birdwatching", "cost_pp": 400, "slots": 1, "tags": ["wildlife", "photography", "nature"]},
+        {"name": "Village craft visit", "cost_pp": 300, "slots": 1, "tags": ["culture", "shopping"]}
+      ]
+    },
+    {
+      "id": "kaziranga", "name": "Kaziranga National Park", "state": "Assam",
+      "category": "wildlife", "secondary_categories": ["nature"],
+      "description": "A UNESCO World Heritage grassland on the Brahmaputra floodplain, home to two-thirds of the world's one-horned rhinoceroses.",
+      "best_season": "November-April",
+      "days": {"min": 3, "ideal": 4, "max": 5},
+      "lat": 26.5775, "lon": 93.1711, "wiki_title": "Kaziranga_National_Park",
+      "access": {"bus": true, "train": true, "flight": true},
+      "transfer_cost_pp": {"bus": 0, "train": 1200, "flight": 1400},
+      "accommodation_per_room_night": {"budget": 1800, "standard": 3800, "luxury": 11000},
+      "food_per_person_day": 700, "local_transport_per_vehicle_day": 900,
+      "tags": ["wildlife", "nature", "photography", "scenic_views", "culture", "relaxation"],
+      "activities": [
+        {"name": "Central Range jeep safari", "cost_pp": 2200, "slots": 1, "tags": ["wildlife", "nature", "photography"]},
+        {"name": "Dawn elephant-back safari", "cost_pp": 1500, "slots": 1, "tags": ["wildlife", "nature"]},
+        {"name": "Western Range birding", "cost_pp": 2000, "slots": 1, "tags": ["wildlife", "photography"]},
+        {"name": "Tea garden visit", "cost_pp": 400, "slots": 1, "tags": ["nature", "food"]},
+        {"name": "Karbi village cultural visit", "cost_pp": 500, "slots": 1, "tags": ["culture", "shopping", "food"]}
+      ]
+    }
+  ]
+}

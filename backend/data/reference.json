@@ -1,0 +1,83 @@
+{
+  "_note": "ILLUSTRATIVE ESTIMATES ONLY. Rates below are rough planning figures, not live fares or prices. Edit freely.",
+  "categories": [
+    {"id": "nature",     "label": "Nature & Mountains",    "emoji": "🏔️"},
+    {"id": "beach",      "label": "Beaches",               "emoji": "🏖️"},
+    {"id": "historical", "label": "Historical & Cultural", "emoji": "🏛️"},
+    {"id": "adventure",  "label": "Adventure",             "emoji": "🧗"},
+    {"id": "spiritual",  "label": "Spiritual",             "emoji": "🛕"},
+    {"id": "wildlife",   "label": "Wildlife",              "emoji": "🐅"}
+  ],
+  "interests": [
+    {"id": "nature",           "label": "Nature"},
+    {"id": "scenic_views",     "label": "Scenic views"},
+    {"id": "trekking",         "label": "Trekking"},
+    {"id": "adventure_sports", "label": "Adventure sports"},
+    {"id": "photography",      "label": "Photography"},
+    {"id": "beaches",          "label": "Beaches"},
+    {"id": "water_sports",     "label": "Water sports"},
+    {"id": "relaxation",       "label": "Relaxation"},
+    {"id": "history",          "label": "History"},
+    {"id": "architecture",     "label": "Architecture"},
+    {"id": "culture",          "label": "Local culture"},
+    {"id": "food",             "label": "Food"},
+    {"id": "shopping",         "label": "Shopping"},
+    {"id": "nightlife",        "label": "Nightlife"},
+    {"id": "spirituality",     "label": "Spirituality"},
+    {"id": "wildlife",         "label": "Wildlife"}
+  ],
+  "accommodation_tiers": [
+    {"id": "budget",   "label": "Budget",   "hint": "Hostels, homestays, simple guesthouses"},
+    {"id": "standard", "label": "Standard", "hint": "3-star hotels and good resorts"},
+    {"id": "luxury",   "label": "Luxury",   "hint": "4-5 star hotels and premium resorts"}
+  ],
+  "transport_modes": {
+    "bus": {
+      "label": "Bus",
+      "rate_per_km": 2.0, "base_fare": 0, "min_one_way_fare": 250,
+      "speed_kmh": 45, "overhead_hours": 0.5,
+      "straight_line": false, "min_distance_km": 0, "max_distance_km": 1500
+    },
+    "train": {
+      "label": "Train",
+      "rate_per_km": 1.3, "base_fare": 0, "min_one_way_fare": 200,
+      "speed_kmh": 55, "overhead_hours": 1.0,
+      "straight_line": false, "min_distance_km": 0, "max_distance_km": 3500
+    },
+    "flight": {
+      "label": "Flight",
+      "rate_per_km": 3.0, "base_fare": 1800, "min_one_way_fare": 2500,
+      "speed_kmh": 700, "overhead_hours": 4.0,
+      "straight_line": true, "min_distance_km": 300, "max_distance_km": 4000
+    }
+  },
+  "cities": [
+    {"name": "Hyderabad", "lat": 17.3850, "lon": 78.4867, "aliases": ["Secunderabad"]},
+    {"name": "Bengaluru", "lat": 12.9716, "lon": 77.5946, "aliases": ["Bangalore"]},
+    {"name": "Chennai", "lat": 13.0827, "lon": 80.2707, "aliases": ["Madras"]},
+    {"name": "Mumbai", "lat": 19.0760, "lon": 72.8777, "aliases": ["Bombay"]},
+    {"name": "Pune", "lat": 18.5204, "lon": 73.8567, "aliases": []},
+    {"name": "Delhi", "lat": 28.6139, "lon": 77.2090, "aliases": ["New Delhi"]},
+    {"name": "Kolkata", "lat": 22.5726, "lon": 88.3639, "aliases": ["Calcutta"]},
+    {"name": "Ahmedabad", "lat": 23.0225, "lon": 72.5714, "aliases": []},
+    {"name": "Surat", "lat": 21.1702, "lon": 72.8311, "aliases": []},
+    {"name": "Jaipur", "lat": 26.9124, "lon": 75.7873, "aliases": []},
+    {"name": "Lucknow", "lat": 26.8467, "lon": 80.9462, "aliases": []},
+    {"name": "Chandigarh", "lat": 30.7333, "lon": 76.7794, "aliases": []},
+    {"name": "Amritsar", "lat": 31.6340, "lon": 74.8723, "aliases": []},
+    {"name": "Bhopal", "lat": 23.2599, "lon": 77.4126, "aliases": []},
+    {"name": "Indore", "lat": 22.7196, "lon": 75.8577, "aliases": []},
+    {"name": "Nagpur", "lat": 21.1458, "lon": 79.0882, "aliases": []},
+    {"name": "Visakhapatnam", "lat": 17.6868, "lon": 83.2185, "aliases": ["Vizag"]},
+    {"name": "Vijayawada", "lat": 16.5062, "lon": 80.6480, "aliases": []},
+    {"name": "Warangal", "lat": 17.9689, "lon": 79.5941, "aliases": []},
+    {"name": "Kochi", "lat": 9.9312, "lon": 76.2673, "aliases": ["Cochin", "Ernakulam"]},
+    {"name": "Thiruvananthapuram", "lat": 8.5241, "lon": 76.9366, "aliases": ["Trivandrum"]},
+    {"name": "Coimbatore", "lat": 11.0168, "lon": 76.9558, "aliases": []},
+    {"name": "Madurai", "lat": 9.9252, "lon": 78.1198, "aliases": []},
+    {"name": "Mysuru", "lat": 12.2958, "lon": 76.6394, "aliases": ["Mysore"]},
+    {"name": "Patna", "lat": 25.5941, "lon": 85.1376, "aliases": []},
+    {"name": "Bhubaneswar", "lat": 20.2961, "lon": 85.8245, "aliases": []},
+    {"name": "Guwahati", "lat": 26.1445, "lon": 91.7362, "aliases": []}
+  ]
+}
